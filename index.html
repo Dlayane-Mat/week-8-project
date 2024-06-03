@@ -5,12 +5,40 @@
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        hello world
-    </h1>
+    <div class="weather-header">
+        <form class="search-form">
+            <input type="search" placeholder="Enter location" required class="search-input" id="search-input">
+            <input type="submit" value="search" class="search-button">
+        </form>
+    </div>
+    <div class="weather-app">
+        <div class="weather-data">
+        <main>
+            <h1 class="weather-city">South africa</h1>
+            <hr/>
+            <p class="weather-details">
+                <span class="day">Monday</span>
+                <span class="time">00:04</span>
+                <br><br>
+                <strong>
+                    <span class="temperature">21</span>
+                    <span class="unit">°C</span>
+                </strong>
+                <br><br>
+                <p>
+                  <div>Humidity : <strong>90%</strong></div>
+                  <div>Windspeed : <strong>7.9km/h</strong></div>
+                </p>
+            </p>
+        </main>
+    </div>
+    <br>
     <footer>
         This project was coded by <a href="https://github.com/Dlayane-Mat/" target="_blank">
             Matjila Dlayane 
@@ -19,5 +47,7 @@
             hosted on Netlify
         </a>
     </footer>
+    </div>
+    <script src="C:\Users\thind\OneDrive\Desktop\week-8-project\index.js"></script>
 </body>
 </html>
