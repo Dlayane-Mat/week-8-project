@@ -1,9 +1,15 @@
+function searchCity(city){
+    let apiKey "0bd4693b39a661e4b0370fe772t7a9o3";
+}
+
+
+
 function getCity(event){
     event.preventDefault();
-    let searchFormElement = document.querySelector("#search-form");
+    let searchFormInput = document.querySelector("#search-input");
     let cityElement = document.querySelector("#weather-city");
-    cityElement.innerHTML = searchFormElement.value;
-
+    cityElement.innerHTML = searchFormInput.value;
+searchCity(searchFormInput.value);
 }
 
 
