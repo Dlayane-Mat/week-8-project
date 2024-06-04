@@ -1,5 +1,7 @@
 function updateWeather(response){
+    let temperatureElement = document.querySelector("#temperature");
     console.log(response.data.temperature.current);
+    
 }
 
 
