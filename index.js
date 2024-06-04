@@ -1,8 +1,11 @@
 function updateWeather(response){
     let temperatureElement = document.querySelector("#temperature");
     let temperature =  response.data.temperature.current;
+    let cityElement = document.querySelector("#weather-city");
+    cityElement.innerHTML = response.data.city;
+
     temperatureElement.innerHTML = Math.round(temperature);
-    console.log(response.data.temperature.current);
+    
     
 }
 
@@ -18,15 +21,12 @@ function searchCity(city){
 function getCity(event){
     event.preventDefault();
     let searchFormInput = document.querySelector("#search-input");
-    let cityElement = document.querySelector("#weather-city");
-    cityElement.innerHTML = searchFormInput.value;
+    
 searchCity(searchFormInput.value);
 }
 
 
-
-
-
-
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", getCity);
+
+searchCity("Limpopo");
