@@ -22,16 +22,21 @@
             <main>
          <h1 id="weather-city">South africa</h1>
             <hr/>
+            <div>
             <p class="weather-details">
-                <span id="time">Monday 00:04</span>
-                <br><br>
-                <strong>
-                    <span class="temperature" id="temperature">21</span>
-                    <span class="unit">°C</span>
-                    <span class="weather-icon">⛅</span>
-                    <br>
-                    <span class="weather-description" id="weather-description"></span>
-                </strong>
+                <span id="time" class="time">Monday 00:04</span>
+                <div>
+                   <strong> <span class="temperature" id="temperature"></span></strong>
+                    <span class="unit"><strong>°C</strong></span>
+                    <div class="icon">
+                        <img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" alt="" class="weather-icon">
+                   </div>
+            
+                </div>
+            </p>    
+            </div>
+                 <strong><span class="weather-description" id="weather-description"></span></strong>    
+                 <br>
                 <div class="current">
                   <span>Humidity : <strong id="current-humidity"></strong></span>
                   <br>
