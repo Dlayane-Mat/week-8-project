@@ -7,9 +7,12 @@ let humidityElement = document.querySelector("#current-humidity")
 let windspeedElement = document.querySelector("#current-windspeed");
 let timeElement = document.querySelector("#time");
 let date = new Date(response.data.time * 1000);
+let iconElement = document.querySelector("#icon");
 
 
-    cityElement.innerHTML = response.data.city;
+
+cityElement.innerHTML = response.data.city;
+iconElement.innerHTML = `<img src="${response.data.condition.icon_url}">`;
     timeElement.innerHTML = formatDate(date);
     windspeedElement.innerHTML = `${response.data.wind.speed}km/h`;
 descriptionElement.innerHTML =response.data.condition.description;
